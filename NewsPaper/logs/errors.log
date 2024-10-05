@@ -1,0 +1,13 @@
+17.03.2024 11-57-01 ERROR C:\Users\Vadim Elisov\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\utils\log.py Internal Server Error: /news/author_now/ (<class 'AttributeError'>, AttributeError("'EmptyManager' object has no attribute 'add'"), <traceback object at 0x00000294EB642400>)
+Traceback (most recent call last):
+  File "C:\Users\Vadim Elisov\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim Elisov\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vadim Elisov\PycharmProjects\NewsPortal\NewsPaper\news\views.py", line 76, in author_now
+    user.groups.add(author_group)
+    ^^^^^^^^^^^^^^^
+AttributeError: 'EmptyManager' object has no attribute 'add'
+17.03.2024 11-57-01 ERROR C:\Users\Vadim Elisov\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\servers\basehttp.py "GET /news/author_now/ HTTP/1.1" 500 73127 None
